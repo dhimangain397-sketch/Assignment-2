@@ -1,4 +1,3 @@
-
 /* font  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -8,6 +7,122 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    color: var(--primary);
+    font-size: 16px;
 }
 
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn {
+    padding: 12.5px 16px;
+    background-image: linear-gradient(48deg, var(--greadent-1), var(--greadent-2), var(--greadent-3));
+    border-radius: 100px;
+    border: transparent;
+    cursor: pointer;
+}
+
+/* color  */
+:root {
+    --primary: #FFFFFF;
+    --secondery: #00FF88;
+    --bac: #412567;
+    --grey: #1A0B2E;
+    --greadent-1: #F7E93F;
+    --greadent-2: #FB09B4;
+    --greadent-3: #9100F8;
+}
+
+
 /* common css end  */
+
+/* nav section start  */
+nav {
+    background-color: var(--bac);
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.menu ul {
+    gap: 2rem;
+}
+
+.menu-item:hover {
+    color: var(--greadent-1);
+}
+
+button {
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+button:hover {
+    background-image: linear-gradient(-48deg, var(--greadent-1), var(--greadent-2), var(--greadent-3));
+
+}
+
+.hamburger {
+    display: none;
+}
+
+
+/* responsive  */
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .logo-img {
+        width: 12rem;
+    }
+
+    .menu,
+    header>.btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+
+    .hamburger img {
+        width: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .logo-img {
+        width: 8rem;
+    }
+
+    .menu,
+    header>.btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+
+}
+
+/* nav section end  */
