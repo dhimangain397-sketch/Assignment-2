@@ -502,3 +502,46 @@ button:hover {
 }
 
 /* host section end  */
+
+/* footer section start  */
+.footer {
+    background-image: url(../assets/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5.5rem 0;
+    text-align: center;
+}
+
+.footer-content ul {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.footer-content ul li a {
+    color: var(--light);
+}
+
+.footer-content ul li a img {
+    margin-right: 0.5rem;
+}
+
+.copyright {
+    color: var(--light);
+}
+
+/* responsive  */
+@media screen and (max-width: 36rem) {
+    .footer-content {
+        margin: 0 1.25rem;
+    }
+
+    
+.footer-content ul {
+    flex-wrap: wrap;
+}
+}
+
+/* footer section end  */
