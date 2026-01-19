@@ -325,13 +325,15 @@ button:hover {
 .techwave {
     background-color: var(--bgc-2);
     text-align: center;
+    padding: 1.25rem 0 7.5rem 0;
 }
 
 .techwave-card {
+    margin-top: 2.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 350px);
-    gap: 30px;
+    grid-template-rows: repeat(3, 21.875rem);
+    gap: 1.875rem;
 }
 
 .small-layout {
@@ -346,9 +348,11 @@ button:hover {
 
 .card-detail {
     text-align: left;
-    padding: 60px 40px;
-    border-radius: 50px;
+    padding: 3.75rem 2.5rem;
+    border-radius: 3.125rem;
     background-color: var(--bgc-3);
+    align-items: center;
+    justify-content: center;
 }
 
 .card-detail>h3 {
@@ -366,7 +370,7 @@ button:hover {
 @media screen and (max-width: 36rem) {
 
     .techwave-card {
-        margin: 0 20px;
+        margin: 0 1.25rem;
     }
 
     .small-layout {
@@ -380,3 +384,121 @@ button:hover {
 }
 
 /* techwave swction end  */
+
+/* featured section start  */
+.featured {
+    background-color: var(--grey);
+    padding: 1.25rem 0 2.5rem 0;
+}
+
+.featured .section-heading {
+    text-align: center;
+}
+
+.featured-card {
+    background-color: var(--bgc-3);
+    border-radius: 2.125rem;
+    overflow: hidden;
+
+}
+
+.featured-content {
+    padding: 24px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.featured-content>h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 12px 0;
+
+}
+
+.featured-content>p {
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.fitured-time {
+    margin-top: 12px;
+}
+
+.fitured-time span {
+    color: var(--secondery);
+    margin-left: 0.5rem;
+
+}
+
+/* responsive  */
+
+@media screen and (max-width: 36rem) {
+    .featured-content {
+        flex-wrap: wrap;
+    }
+
+    .featured {
+        padding-bottom: 0;
+    }
+}
+
+/* featured section end  */
+
+/* host section start  */
+.host {
+    background-color: var(--grey);
+    padding: 2.5rem 0 5.5rem 0;
+    text-align: center;
+}
+
+.host-content {
+    background-color: var(--bgc-3);
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    border-radius: 2.5rem;
+    gap: 1.5rem;
+}
+
+.host-content-area {
+    text-align: left;
+}
+
+.host-content-area>h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.host-content-area>p {
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+
+.host-social {
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.host-social a {
+    border: 1px solid var(--greadent-3);
+    border-radius: 3.125rem;
+    padding: 0.625rem;
+}
+
+/* responsive  */
+@media screen and (max-width: 36rem) {
+    .host-content {
+        flex-direction: column;
+        margin: 0 1.25rem;
+    }
+
+    .host-content-area {
+        text-align: center;
+    }
+
+    .host-social {
+        justify-content: center;
+    }
+}
+
+/* host section end  */
